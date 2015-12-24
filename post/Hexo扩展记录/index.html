@@ -4,23 +4,40 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>WELCOME | 小红说</title>
+    <title>Hexo扩展记录 | 小红说</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Ian Zhang">
     
 
     
-    <meta name="description" content="ianzhang.cn的域名也买了有一段时间，一直没空收拾。趁着年假，把博客搭了起来。有空过来写写字吧。">
+    <meta name="description" content="Hexo扩展记录Hexo生成sitemap站点地图和rss atom的方法发现自带的系统缺了很多组件，一一补全。
+http://localhost:4000/sitemap.xml
+
+Administrator@Ian MINGW64 /f/blog/blog (master)
+$ cnpm install hexo-generator-sitemap
+hexo-generator-sitemap">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WELCOME">
-<meta property="og:url" content="http://www.ianzhang.cn/post/welcome/index.html">
+<meta property="og:title" content="Hexo扩展记录">
+<meta property="og:url" content="http://www.ianzhang.cn/post/Hexo扩展记录/index.html">
 <meta property="og:site_name" content="小红说">
-<meta property="og:description" content="ianzhang.cn的域名也买了有一段时间，一直没空收拾。趁着年假，把博客搭了起来。有空过来写写字吧。">
-<meta property="og:updated_time" content="2015-12-24T09:20:21.811Z">
+<meta property="og:description" content="Hexo扩展记录Hexo生成sitemap站点地图和rss atom的方法发现自带的系统缺了很多组件，一一补全。
+http://localhost:4000/sitemap.xml
+
+Administrator@Ian MINGW64 /f/blog/blog (master)
+$ cnpm install hexo-generator-sitemap
+hexo-generator-sitemap">
+<meta property="og:image" content="http://www.ianzhang.cn/attachpic/nositemapxml.jpg">
+<meta property="og:image" content="http://www.ianzhang.cn/attachpic/404demo.jpg">
+<meta property="og:updated_time" content="2015-12-24T09:20:21.805Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WELCOME">
-<meta name="twitter:description" content="ianzhang.cn的域名也买了有一段时间，一直没空收拾。趁着年假，把博客搭了起来。有空过来写写字吧。">
+<meta name="twitter:title" content="Hexo扩展记录">
+<meta name="twitter:description" content="Hexo扩展记录Hexo生成sitemap站点地图和rss atom的方法发现自带的系统缺了很多组件，一一补全。
+http://localhost:4000/sitemap.xml
+
+Administrator@Ian MINGW64 /f/blog/blog (master)
+$ cnpm install hexo-generator-sitemap
+hexo-generator-sitemap">
 
     
     <link rel="alternative" href="/atom.xml" title="小红说" type="application/atom+xml">
@@ -86,14 +103,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/welcome/" title="WELCOME" itemprop="url">WELCOME</a>
+      <a href="/post/Hexo扩展记录/" title="Hexo扩展记录" itemprop="url">Hexo扩展记录</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Ian Zhang" target="_blank" itemprop="author">Ian Zhang</a>
 		
   <p class="article-time">
-    <time datetime="2015-12-23T14:28:58.000Z" itemprop="datePublished"> 发表于 2015-12-23</time>
+    <time datetime="2015-12-24T06:23:42.000Z" itemprop="datePublished"> 发表于 2015-12-24</time>
     
   </p>
 </header>
@@ -102,11 +119,59 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<p><a href="http://www.ianzhang.cn/">ianzhang.cn</a>的域名也买了有一段时间，一直没空收拾。<br>趁着年假，把博客搭了起来。<br>有空过来写写字吧。   </p>
+		<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。</p>
+<pre><code>http://localhost:4000/sitemap.xml
+</code></pre><p><img src="/attachpic/nositemapxml.jpg" alt="nositemapxml"></p>
+<pre><code>Administrator@Ian MINGW64 /f/blog/blog (master)
+$ cnpm install hexo-generator-sitemap
+hexo-generator-sitemap@1.0.1 node_modules\hexo-generator-sitemap
+</code></pre><p>还是没生成</p>
+<pre><code> Administrator@Ian MINGW64 /f/blog/blog (master)
+$ cnpm install hexo-generator-sitemap --save
+hexo-generator-sitemap@1.0.1 node_modules\hexo-generator-sitemap
+
+Administrator@Ian MINGW64 /f/blog/blog (master)
+$ cnpm install hexo-generator-baidu-sitemap --save
+hexo-generator-baidu-sitemap@0.1.2 node_modules\hexo-generator-baidu-sitemap
+└── hexo-generator-baidu-sitemap@0.0.8
+</code></pre><p>注意 –save 即可</p>
+<p>_config.yml中可以对这两组xml进行配置</p>
+<pre><code>feed:
+    type: atom ##feed类型 atom或者rss2
+    path: atom.xml ##feed路径
+    limit: 20  ##feed文章最小数量
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+</code></pre><p>generate即可</p>
+<pre><code>Administrator@Ian MINGW64 /f/blog/blog (master)
+$ hexo g
+.
+.
+INFO  Generated: baidusitemap.xml
+INFO  Generated: atom.xml
+INFO  Generated: index.html
+INFO  Generated: sitemap.xml
+INFO  63 files generated in 3.64 s
+</code></pre><h2 id="Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><a href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5" class="headerlink" title="Hexo配置404页的方法"></a>Hexo配置404页的方法</h2><p>本处采用腾讯404</p>
+<p>在<hexo_folder>/source下新建404.html<br>替换以下内容</hexo_folder></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot;
+        homePageUrl=&quot;http://www.ianzhang.cn&quot; homePageName=&quot;BackToHome&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><img src="/attachpic/404demo.jpg" alt="404demo"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -114,13 +179,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/life/">life</a>
+  <a class="article-category-link" href="/categories/hexo/">hexo</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/hexo/">hexo</a><a href="/tags/start/">start</a><a href="/tags/welcome/">welcome</a>
+  <span></span> <a href="/tags/extends/">extends</a><a href="/tags/hexo/">hexo</a><a href="/tags/plugin/">plugin</a>
   </div>
 
 </div>
@@ -164,20 +229,20 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/Hexo扩展记录/" title="Hexo扩展记录">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Hexo扩展记录</span>
+
+<div class="next">
+<a href="/post/welcome/"  title="WELCOME">
+ <strong>下一篇：</strong><br/> 
+ <span>WELCOME
+</span>
 </a>
 </div>
-
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/welcome/" data-title="WELCOME" data-url="http://www.ianzhang.cn/post/welcome/"></div>
+	<div class="ds-thread" data-thread-key="post/Hexo扩展记录/" data-title="Hexo扩展记录" data-url="http://www.ianzhang.cn/post/Hexo扩展记录/"></div>
 </section>
 
 
@@ -187,7 +252,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li></ol></li></ol>
  
   </div>
 
