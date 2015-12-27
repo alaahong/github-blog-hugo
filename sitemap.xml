@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.ianzhang.cn/msg/index.html</loc>
+    <lastmod>2015-12-27T08:59:31.649Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2015-12-27T07:53:47.424Z</lastmod>
   </url>
@@ -29,11 +34,6 @@
   <url>
     <loc>http://www.ianzhang.cn/scbcode/mini2/Scripts/jquery/html5shiv.js</loc>
     <lastmod>2015-12-27T04:41:08.988Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.ianzhang.cn/msg/index.html</loc>
-    <lastmod>2015-12-24T09:57:51.630Z</lastmod>
   </url>
   
   <url>
