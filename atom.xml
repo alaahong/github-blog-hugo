@@ -4,7 +4,7 @@
   <subtitle><![CDATA[手中执剑,方能保护所爱之人.Trust me,honey]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.ianzhang.cn/"/>
-  <updated>2015-12-24T09:20:21.805Z</updated>
+  <updated>2015-12-26T03:32:39.935Z</updated>
   <id>http://www.ianzhang.cn/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/"/>
     <id>http://www.ianzhang.cn/post/Hexo扩展记录/</id>
     <published>2015-12-24T06:23:42.000Z</published>
-    <updated>2015-12-24T09:20:21.805Z</updated>
+    <updated>2015-12-26T03:32:39.935Z</updated>
     <content type="html"><![CDATA[<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。</p>
 <pre><code>http://localhost:4000/sitemap.xml
 </code></pre><p><img src="/attachpic/nositemapxml.jpg" alt="nositemapxml"></p>
@@ -69,7 +69,14 @@ INFO  63 files generated in 3.64 s
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><p><img src="/attachpic/404demo.jpg" alt="404demo"></p>
-]]></content>
+<h2 id="u589E_u52A0_categories__u548C_tags"><a href="#u589E_u52A0_categories__u548C_tags" class="headerlink" title="增加 categories 和 tags"></a>增加 categories 和 tags</h2><p>进入项目根目录, 新建模块</p>
+<pre><code>$ hexo new page tags
+$ hexo new page categories
+</code></pre><p>同时修改source下面categories和tags下 对应的 index.md<br>增加相应的 layout: categories   layout: tags</p>
+<p>如果希望菜单栏有对应的选项的话,修改主题 _config.yml ,在menu下增加  </p>
+<pre><code>Categories: /categories
+Tags: /tags
+</code></pre>]]></content>
     <summary type="html">
     <![CDATA[<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="H]]>
     </summary>

@@ -29,7 +29,7 @@ $ cnpm install hexo-generator-sitemap
 hexo-generator-sitemap">
 <meta property="og:image" content="http://www.ianzhang.cn/attachpic/nositemapxml.jpg">
 <meta property="og:image" content="http://www.ianzhang.cn/attachpic/404demo.jpg">
-<meta property="og:updated_time" content="2015-12-24T09:20:21.805Z">
+<meta property="og:updated_time" content="2015-12-26T03:32:39.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo扩展记录">
 <meta name="twitter:description" content="Hexo扩展记录Hexo生成sitemap站点地图和rss atom的方法发现自带的系统缺了很多组件，一一补全。
@@ -119,7 +119,7 @@ hexo-generator-sitemap">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_categories__u548C_tags"><span class="toc-number">1.3.</span> <span class="toc-text">增加 categories 和 tags</span></a></li></ol></li></ol>
 		
 		</div>
 		
@@ -172,7 +172,14 @@ INFO  63 files generated in 3.64 s
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre><p><img src="/attachpic/404demo.jpg" alt="404demo"></p>
-  
+<h2 id="u589E_u52A0_categories__u548C_tags"><a href="#u589E_u52A0_categories__u548C_tags" class="headerlink" title="增加 categories 和 tags"></a>增加 categories 和 tags</h2><p>进入项目根目录, 新建模块</p>
+<pre><code>$ hexo new page tags
+$ hexo new page categories
+</code></pre><p>同时修改source下面categories和tags下 对应的 index.md<br>增加相应的 layout: categories   layout: tags</p>
+<p>如果希望菜单栏有对应的选项的话,修改主题 _config.yml ,在menu下增加  </p>
+<pre><code>Categories: /categories
+Tags: /tags
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -252,7 +259,7 @@ INFO  63 files generated in 3.64 s
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_categories__u548C_tags"><span class="toc-number">1.3.</span> <span class="toc-text">增加 categories 和 tags</span></a></li></ol></li></ol>
  
   </div>
 
