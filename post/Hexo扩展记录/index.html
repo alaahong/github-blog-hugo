@@ -19,7 +19,8 @@
 <meta property="og:description" content="Hexo扩展记录Hexo生成sitemap站点地图和rss atom的方法发现自带的系统缺了很多组件，一一补全。">
 <meta property="og:image" content="http://www.ianzhang.cn/attachpic/nositemapxml.jpg">
 <meta property="og:image" content="http://www.ianzhang.cn/attachpic/404demo.jpg">
-<meta property="og:updated_time" content="2015-12-27T06:53:34.416Z">
+<meta property="og:image" content="http://www.ianzhang.cn/attachpic/importvideowithplugininhexo.png">
+<meta property="og:updated_time" content="2015-12-27T07:53:47.424Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo扩展记录">
 <meta name="twitter:description" content="Hexo扩展记录Hexo生成sitemap站点地图和rss atom的方法发现自带的系统缺了很多组件，一一补全。">
@@ -104,7 +105,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_categories__u548C_tags"><span class="toc-number">1.3.</span> <span class="toc-text">增加 categories 和 tags</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_categories__u548C_tags"><span class="toc-number">1.3.</span> <span class="toc-text">增加 categories 和 tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u63D2_u5165_u97F3_u4E50"><span class="toc-number">1.4.</span> <span class="toc-text">插入音乐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u63D2_u5165_u89C6_u9891"><span class="toc-number">1.5.</span> <span class="toc-text">插入视频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_u54CD_u5E94_u5F0F_u7684_u89C6_u9891"><span class="toc-number">1.6.</span> <span class="toc-text">增加响应式的视频</span></a></li></ol></li></ol>
 		
 		</div>
 		
@@ -162,6 +163,27 @@ $ hexo new page categories
 <p>如果希望菜单栏有对应的选项的话,修改主题 _config.yml ,在menu下增加  </p>
 <pre><code>Categories: /categories
 Tags: /tags
+</code></pre><h2 id="u63D2_u5165_u97F3_u4E50"><a href="#u63D2_u5165_u97F3_u4E50" class="headerlink" title="插入音乐"></a>插入音乐</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">center</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">frameborder</span>=<span class="value">"no"</span> <span class="attribute">border</span>=<span class="value">"0"</span> <span class="attribute">marginwidth</span>=<span class="value">"0"</span> <span class="attribute">marginheight</span>=<span class="value">"0"</span> <span class="attribute">width</span>=<span class="value">330</span> <span class="attribute">height</span>=<span class="value">86</span> <span class="attribute">src</span>=<span class="value">"http://music.163.com/outchain/player?type=2&amp;id=28952247&amp;auto=0&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=28952247&auto=0&height=66"></iframe><br></center>
+
+<h2 id="u63D2_u5165_u89C6_u9891"><a href="#u63D2_u5165_u89C6_u9891" class="headerlink" title="插入视频"></a>插入视频</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">height</span>=<span class="value">498</span> <span class="attribute">width</span>=<span class="value">510</span> <span class="attribute">src</span>=<span class="value">"http://player.youku.com/embed/XMTQyMjc3MTM4MA=="</span> <span class="attribute">frameborder</span>=<span class="value">0</span> <span class="attribute">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XMTQyMjc3MTM4MA==" frameborder="0" allowfullscreen></iframe>
+
+
+<h2 id="u589E_u52A0_u54CD_u5E94_u5F0F_u7684_u89C6_u9891"><a href="#u589E_u52A0_u54CD_u5E94_u5F0F_u7684_u89C6_u9891" class="headerlink" title="增加响应式的视频"></a>增加响应式的视频</h2><p>安装 hexo-tag-video</p>
+<pre><code>$ npm install hexo-tag-video --save
+npm WARN install Couldn&apos;t install optional dependency: Unsupported
+npm WARN install Couldn&apos;t install optional dependency: Unsupported
+npm WARN install Couldn&apos;t install optional dependency: Unsupported
+hexo-site@0.0.0 F:\blog\blog
+└── hexo-tag-video@0.0.2
+</code></pre><p>修改 <code>_config.yml.</code></p>
+<pre><code>plugins:
+  - hexo-tag-video
+</code></pre><p>使用格式：    </p>
+<p><img src="/attachpic/importvideowithplugininhexo.png" alt="&quot;import video with plugin in hexo&quot;"></p>
+<p>例如：</p>
+<pre><code><div class="video-container"><iframe src="http://player.youku.com/embed/XODkwMTU4MTMy" frameborder="0" allowfullscreen></iframe></div>
 </code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
@@ -250,7 +272,7 @@ Tags: /tags
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_categories__u548C_tags"><span class="toc-number">1.3.</span> <span class="toc-text">增加 categories 和 tags</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo_u6269_u5C55_u8BB0_u5F55"><span class="toc-number">1.</span> <span class="toc-text">Hexo扩展记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><span class="toc-number">1.1.</span> <span class="toc-text">Hexo生成sitemap站点地图和rss atom的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><span class="toc-number">1.2.</span> <span class="toc-text">Hexo配置404页的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_categories__u548C_tags"><span class="toc-number">1.3.</span> <span class="toc-text">增加 categories 和 tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u63D2_u5165_u97F3_u4E50"><span class="toc-number">1.4.</span> <span class="toc-text">插入音乐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u63D2_u5165_u89C6_u9891"><span class="toc-number">1.5.</span> <span class="toc-text">插入视频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u589E_u52A0_u54CD_u5E94_u5F0F_u7684_u89C6_u9891"><span class="toc-number">1.6.</span> <span class="toc-text">增加响应式的视频</span></a></li></ol></li></ol>
  
   </div>
 
