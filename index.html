@@ -87,6 +87,73 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/post/The-2nd-Mini-Code-Marathon-Summary/" title="The 2nd Mini Code Marathon Summary" itemprop="url">The 2nd Mini Code Marathon Summary</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Ian Zhang" target="_blank" itemprop="author">Ian Zhang</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-27T06:39:57.000Z" itemprop="datePublished"> 发表于 2015-12-27</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="u6E23_u6253_u8FF7_u4F60_u7F16_u7A0B_u9A6C_u62C9_u677E_uFF08Mini_Code_Marathon_uFF09_u5C0F_u8BB0"><a href="#u6E23_u6253_u8FF7_u4F60_u7F16_u7A0B_u9A6C_u62C9_u677E_uFF08Mini_Code_Marathon_uFF09_u5C0F_u8BB0" class="headerlink" title="渣打迷你编程马拉松（Mini Code Marathon）小记"></a>渣打迷你编程马拉松（Mini Code Marathon）小记</h1><p><code>--11月刚结束决赛时写的,贴上来.</code></p>
+<p><img src="/attachpic/minicode2ndbeijing.jpg" alt="beijing"></p>
+        
+        
+        <p class="article-more-link">
+          
+            <a href="/post/The-2nd-Mini-Code-Marathon-Summary/#more">Read More</a>
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/work/">work</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/codemarathon/">codemarathon</a><a href="/tags/sc/">sc</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/post/The-2nd-Mini-Code-Marathon-Summary/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/The-2nd-Mini-Code-Marathon-Summary/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+  
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/post/Hexo扩展记录/" title="Hexo扩展记录" itemprop="url">Hexo扩展记录</a>
   </h1>
   <p class="article-author">By
@@ -100,66 +167,12 @@
 </header>
     <div class="article-content">
         
-        <h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。</p>
-<pre><code>http://localhost:4000/sitemap.xml
-</code></pre><p><img src="/attachpic/nositemapxml.jpg" alt="nositemapxml"></p>
-<pre><code>Administrator@Ian MINGW64 /f/blog/blog (master)
-$ cnpm install hexo-generator-sitemap
-hexo-generator-sitemap@1.0.1 node_modules\hexo-generator-sitemap
-</code></pre><p>还是没生成</p>
-<pre><code> Administrator@Ian MINGW64 /f/blog/blog (master)
-$ cnpm install hexo-generator-sitemap --save
-hexo-generator-sitemap@1.0.1 node_modules\hexo-generator-sitemap
-
-Administrator@Ian MINGW64 /f/blog/blog (master)
-$ cnpm install hexo-generator-baidu-sitemap --save
-hexo-generator-baidu-sitemap@0.1.2 node_modules\hexo-generator-baidu-sitemap
-└── hexo-generator-baidu-sitemap@0.0.8
-</code></pre><p>注意 –save 即可</p>
-<p>_config.yml中可以对这两组xml进行配置</p>
-<pre><code>feed:
-    type: atom ##feed类型 atom或者rss2
-    path: atom.xml ##feed路径
-    limit: 20  ##feed文章最小数量
-sitemap:
-    path: sitemap.xml
-baidusitemap:
-    path: baidusitemap.xml
-</code></pre><p>generate即可</p>
-<pre><code>Administrator@Ian MINGW64 /f/blog/blog (master)
-$ hexo g
-.
-.
-INFO  Generated: baidusitemap.xml
-INFO  Generated: atom.xml
-INFO  Generated: index.html
-INFO  Generated: sitemap.xml
-INFO  63 files generated in 3.64 s
-</code></pre><h2 id="Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5"><a href="#Hexo_u914D_u7F6E404_u9875_u7684_u65B9_u6CD5" class="headerlink" title="Hexo配置404页的方法"></a>Hexo配置404页的方法</h2><p>本处采用腾讯404</p>
-<p>在<hexo_folder>/source下新建404.html<br>替换以下内容</hexo_folder></p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot;
-        homePageUrl=&quot;http://www.ianzhang.cn&quot; homePageName=&quot;BackToHome&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p><img src="/attachpic/404demo.jpg" alt="404demo"></p>
-<h2 id="u589E_u52A0_categories__u548C_tags"><a href="#u589E_u52A0_categories__u548C_tags" class="headerlink" title="增加 categories 和 tags"></a>增加 categories 和 tags</h2><p>进入项目根目录, 新建模块</p>
-<pre><code>$ hexo new page tags
-$ hexo new page categories
-</code></pre><p>同时修改source下面categories和tags下 对应的 index.md<br>增加相应的 layout: categories   layout: tags</p>
-<p>如果希望菜单栏有对应的选项的话,修改主题 _config.yml ,在menu下增加  </p>
-<pre><code>Categories: /categories
-Tags: /tags
-</code></pre>
+        <h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。<br>
         
         
         <p class="article-more-link">
+          
+            <a href="/post/Hexo扩展记录/#more">Read More</a>
           
        </p>
     </div>
@@ -297,6 +310,10 @@ Tags: /tags
 			<li><a href="/categories/life/" title="life">life<sup>1</sup></a></li>
 		  
 		
+		  
+			<li><a href="/categories/work/" title="work">work<sup>1</sup></a></li>
+		  
+		
 		</ul>
 </div>
 
@@ -316,6 +333,14 @@ Tags: /tags
 		
 			
 				<li><a href="/tags/welcome/" title="welcome">welcome<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/codemarathon/" title="codemarathon">codemarathon<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/sc/" title="sc">sc<sup>1</sup></a></li>
 			
 		
 			

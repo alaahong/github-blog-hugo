@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2015-12-27T06:53:34.416Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.ianzhang.cn/post/The-2nd-Mini-Code-Marathon-Summary/</loc>
+    <lastmod>2015-12-27T06:53:34.406Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ianzhang.cn/scbcode/mini2/index.html</loc>
     <lastmod>2015-12-27T04:59:08.490Z</lastmod>
   </url>
@@ -19,11 +29,6 @@
   <url>
     <loc>http://www.ianzhang.cn/scbcode/mini2/Scripts/jquery/html5shiv.js</loc>
     <lastmod>2015-12-27T04:41:08.988Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2015-12-26T03:32:39.935Z</lastmod>
   </url>
   
   <url>

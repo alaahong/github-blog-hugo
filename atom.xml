@@ -4,7 +4,7 @@
   <subtitle><![CDATA[手中执剑,方能保护所爱之人.Trust me,honey]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.ianzhang.cn/"/>
-  <updated>2015-12-26T03:32:39.935Z</updated>
+  <updated>2015-12-27T06:53:34.406Z</updated>
   <id>http://www.ianzhang.cn/</id>
   
   <author>
@@ -15,14 +15,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[The 2nd Mini Code Marathon Summary]]></title>
+    <link href="http://www.ianzhang.cn/post/The-2nd-Mini-Code-Marathon-Summary/"/>
+    <id>http://www.ianzhang.cn/post/The-2nd-Mini-Code-Marathon-Summary/</id>
+    <published>2015-12-27T06:39:57.000Z</published>
+    <updated>2015-12-27T06:53:34.406Z</updated>
+    <content type="html"><![CDATA[<h1 id="u6E23_u6253_u8FF7_u4F60_u7F16_u7A0B_u9A6C_u62C9_u677E_uFF08Mini_Code_Marathon_uFF09_u5C0F_u8BB0"><a href="#u6E23_u6253_u8FF7_u4F60_u7F16_u7A0B_u9A6C_u62C9_u677E_uFF08Mini_Code_Marathon_uFF09_u5C0F_u8BB0" class="headerlink" title="渣打迷你编程马拉松（Mini Code Marathon）小记"></a>渣打迷你编程马拉松（Mini Code Marathon）小记</h1><p><code>--11月刚结束决赛时写的,贴上来.</code></p>
+<p><img src="/attachpic/minicode2ndbeijing.jpg" alt="beijing"></p>
+<a id="more"></a>
+<p>三月份开始筹备，期间因为各种因素差点停办。十一前一周仓促恢复项目，十一期间开始宣传，经过线上初赛，线下复赛，昨天结束了决赛。还是蛮赶的。</p>
+<p>过程不细表，几个人志愿组织比赛也很辛苦，只谈谈几组选手吧。</p>
+<p>乍一看，选手背景都挺好，学生里一堆985，211的，还有几组ACM亚洲金牌、银牌队伍捧场，社会上也有G家的人过来玩耍。大概是因为初赛算法题，所以过滤了很多未练习过算法思维的选手。复赛出了几道工程题，表现出彩的不多。很遗憾。</p>
+<p>因为比赛限制了主题，花儿与编程，所以要求队伍包含女性选手，并做出一定贡献。初赛线上比赛很容易蒙混，复赛就看出来了区别了，女性选手很容易陷入打酱油的地步。有一组印象深刻，两个男生抓耳挠腮地做了一天题，女的毫不掩饰，坐那吃了一天鸭脖，期间还躺沙发睡了几个小时，后来其他组演讲的时候，这位女性好不无聊，穿着高跟鞋叮叮当当地走来走去…相比起来，其他打酱油的女性选手或多或少还写个文档、画个UML图啥的。</p>
+<p>有两组选手较为可惜，这两组都曾在某网站的答题比赛里拿了很多次的奖品，拿奖专业户了。然后都不太认真对待比赛，所以也没啥好成绩。要求选手描述自己的项目亮点，某选手说了两点，1，使用了某技术；2，网不好没心思答题。</p>
+<p>因为复赛的规则限制，选手实际上都没有在规定的时间内做出特别完善的可交付的项目，所以在决赛前我给各组选手发了一些私人的建议，选手都还有很大的提升空间。因为还要负责其他事宜，所以决赛选手演讲的部分只跟了半场，最后冠军那组其实是出乎我意料的，据说他们针对性地改善了自己的项目，并且深入浅出地在有限的时间内好好地讲了自己的代码。相比起来另一组ACM出身队伍就太当酱油了，女生继续不作为，男生也没怎么增加工程化的要素。</p>
+<p>有些选手的习惯还是不错的，有未进决赛的队伍希望了解到自己复赛的完成情况，遇到这样队伍自然是很高兴地与其沟通项目的得失，当然也有反例，有的队伍在自己初赛分时较低的时候想到强调两场初赛的难度平衡，可是他们不知道自己的得分单在自己那场比赛里都排名很低；有个队伍要把同事气坏了，确认各种行程问题的电话短信各种不接不回，好不容易打通了电话还反过来呛人，比赛结束合完影就悄无声息地消失了，不要奖金了么…其实我浙学弟还是蛮不错的，初赛算法题答的蛮好的，就是复赛，做的我都不好意思说了，比赛时要求了用发邮件的形式提交代码，结果有一组学弟学妹们为了增加亮点，在主体功能没有实现的前提下，为了增加一个打开软件的开场动画，打了4GB大小的依赖包进去…</p>
+<p>有很多学校的学生出来是不能直接干活的，说没项目经验也可以理解，但是有些选手太想当然了。问，你这个性能如何？答：快，问，怎么快了？答，用的C++…亏我还特意叮嘱各队加上些测试用例，针对可用性、扩展性以及性能等方面要有数据支持…有一组在亮点一栏描述的是，“因为处理60MB的数据花了N秒，所以处理4GB的数据时最多花费（4096/1024/60）*N秒，因为采用了面向对象的方式，所以处理4GB的数据的时候内存占用一定不超过4GB”…这编程都是数学老师教的么…</p>
+<p>大部分是学生选手，所以复赛有些相同的问题集体暴露，例如缺乏异常控制、很少写注释、没有单元测试、缺少SCM、不注重分层、UI过于简陋…选手们为了有个亮点，施展各路神通，反而弄巧成拙…</p>
+<p>现在的国内学校教学跟实际工程领域的脱钩太大，选手做出来的应用难有可用性。学生应该多在外面实习试试。</p>
+<p><img src="/attachpic/minicode2ndfinal.jpg" alt="final"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="u6E23_u6253_u8FF7_u4F60_u7F16_u7A0B_u9A6C_u62C9_u677E_uFF08Mini_Code_Marathon_uFF09_u5C0F_u8BB0"><a href="#u6E23_u6253_u8FF7_u4F60_u7F16_u7A0B_u9A6C_u62C9_u677E_uFF08Mini_Code_Marathon_uFF09_u5C0F_u8BB0" class="headerlink" title="渣打迷你编程马拉松（Mini Code Marathon）小记"></a>渣打迷你编程马拉松（Mini Code Marathon）小记</h1><p><code>--11月刚结束决赛时写的,贴上来.</code></p>
+<p><img src="/attachpic/minicode2ndbeijing.jpg" alt="beijing"></p>]]>
+    
+    </summary>
+    
+      <category term="codemarathon" scheme="http://www.ianzhang.cn/tags/codemarathon/"/>
+    
+      <category term="sc" scheme="http://www.ianzhang.cn/tags/sc/"/>
+    
+      <category term="work" scheme="http://www.ianzhang.cn/categories/work/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Hexo扩展记录]]></title>
     <link href="http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/"/>
     <id>http://www.ianzhang.cn/post/Hexo扩展记录/</id>
     <published>2015-12-24T06:23:42.000Z</published>
-    <updated>2015-12-26T03:32:39.935Z</updated>
-    <content type="html"><![CDATA[<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。</p>
-<pre><code>http://localhost:4000/sitemap.xml
-</code></pre><p><img src="/attachpic/nositemapxml.jpg" alt="nositemapxml"></p>
+    <updated>2015-12-27T06:53:34.416Z</updated>
+    <content type="html"><![CDATA[<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。<br><a id="more"></a><br>    <a href="http://localhost:4000/sitemap.xml" target="_blank" rel="external">http://localhost:4000/sitemap.xml</a><br><img src="/attachpic/nositemapxml.jpg" alt="nositemapxml"></p>
 <pre><code>Administrator@Ian MINGW64 /f/blog/blog (master)
 $ cnpm install hexo-generator-sitemap
 hexo-generator-sitemap@1.0.1 node_modules\hexo-generator-sitemap
@@ -78,7 +111,8 @@ $ hexo new page categories
 Tags: /tags
 </code></pre>]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="H]]>
+    <![CDATA[<h1 id="Hexo_u6269_u5C55_u8BB0_u5F55"><a href="#Hexo_u6269_u5C55_u8BB0_u5F55" class="headerlink" title="Hexo扩展记录"></a>Hexo扩展记录</h1><h2 id="Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5"><a href="#Hexo_u751F_u6210sitemap_u7AD9_u70B9_u5730_u56FE_u548Crss_atom_u7684_u65B9_u6CD5" class="headerlink" title="Hexo生成sitemap站点地图和rss atom的方法"></a>Hexo生成sitemap站点地图和rss atom的方法</h2><p>发现自带的系统缺了很多组件，一一补全。<br>]]>
+    
     </summary>
     
       <category term="extends" scheme="http://www.ianzhang.cn/tags/extends/"/>
