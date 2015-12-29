@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.ianzhang.cn/scbcode/mini2/index.html</loc>
+    <lastmod>2015-12-29T06:11:12.796Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ianzhang.cn/msg/index.html</loc>
     <lastmod>2015-12-27T08:59:31.649Z</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://www.ianzhang.cn/post/The-2nd-Mini-Code-Marathon-Summary/</loc>
     <lastmod>2015-12-27T06:53:34.406Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.ianzhang.cn/scbcode/mini2/index.html</loc>
-    <lastmod>2015-12-27T04:59:08.490Z</lastmod>
   </url>
   
   <url>
