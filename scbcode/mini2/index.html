@@ -17,107 +17,7 @@
     <script src="Scripts/jquery/html5shiv.js"></script>
     <![endif]-->
     <link href="Scripts/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Scripts/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Scripts/css/bg.css">
-    <!--    <style type="text/css">
-            /**遮罩层**/
-            .dialogWrap {
-                display: none;
-                position: fixed;
-                z-index: 98;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #000;
-                opacity: 0.3;
-                filter: alpha(opacity=30);
-            }
-
-            .barcodeDialog {
-                display: none;
-                position: fixed;
-                z-index: 99;
-                top: 50%;
-                left: 50%;
-                margin-left: -280px;
-                margin-top: -326px;
-                width: 560px;
-                height: 652px;
-                background: url(/Templates/8aza/Images/barcodeDialog.png);
-            }
-
-            .barcodeDialog .btn {
-                position: absolute;
-                top: 166px;
-                left: 504px;
-                width: 50px;
-                height: 44px;
-                cursor: pointer;
-            }
-
-            /**二维码**/
-            .barcode {
-                position: relative;
-                cursor: pointer;
-            }
-
-            .barcode span {
-                background: url(/Templates/8aza/Images/bcIcons.png) no-repeat 22px top;
-                padding: 0 40px;
-                color: #999999;
-                font-weight: bold;
-                font-size: 12px;
-            }
-
-            .barcode div {
-                position: absolute;
-                z-index: 99;
-                background-color: #fff;
-                top: 35px;
-                left: -50px;
-                padding: 18px 18px 5px 18px;
-                border: 1px solid #999;
-                display: none;
-            }
-
-            .barcode div i {
-                position: absolute;
-                top: -21px;
-                *top: -40px;
-                left: 50%;
-                margin-left: -11px;
-                border-width: 11px;
-                border-style: solid;
-                border-bottom-color: #fff;
-                border-top-color: transparent;
-                border-left-color: transparent;
-                border-right-color: transparent;
-            }
-
-            .barcode div b {
-                position: absolute;
-                top: -22px;
-                *top: -41px;
-                left: 50%;
-                margin-left: -11px;
-                border-width: 11px;
-                border-style: solid;
-                border-bottom-color: #999;
-                border-top-color: transparent;
-                border-left-color: transparent;
-                border-right-color: transparent;
-            }
-
-            .barcode div p {
-                text-align: center;
-                font-size: 11px;
-                font-weight: normal;
-                color: #555;
-                padding: 8px 0;
-            }
-        </style>-->
-    <!--<script type="text/javascript" src="Scripts/js/m.js"></script>-->
 </head>
 
 <body>
@@ -250,13 +150,10 @@
         </div>
         <!--footer-->
         <div id="footer">
-
-
             <input id="txtCompanyName" type="hidden" value="渣打科营">
             <div class="footlink">
-                <span>&copy;2015 |   <a href="#myModal" role="button" data-toggle="modal"> About us </a> | 特别感谢：<a href="http://www.hirede.com" target="_blank">雇得易</a></span>
+                <span>&copy;2015 |   <a href="#myModal" data-toggle="modal" data-target="#myModal"> About us </a> | 特别感谢：<a href="http://www.hirede.com" target="_blank">雇得易</a></span>
             </div>
-
 
         </div>
     </div>
@@ -268,107 +165,138 @@
     </div>
 
 </div>
-<!--<script type="text/javascript">
-    $(function () {
-        var barcode = $('.barcode');
-        //$('#seCompanyLogin').after(barcode);
-        setBarcode(barcode);
-        function setBarcode(elem) {
-            var elem = elem.children('span'),
-                    barcode = elem.next('div'),
-                    timer = null;
+<!--
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+    Launch demo modal
+</button>
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-            function bShow() {
-                clearTimeout(timer);
-                barcode.show();
-            }
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <h4>Text in a modal</h4>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
-            function bHide() {
-                timer = setTimeout(function () {
-                    barcode.hide();
-                }, 200);
-            }
+                <h4>Popover in a modal</h4>
+                <p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
 
-            elem.mouseover(bShow);
-            barcode.mouseover(bShow);
-            elem.mouseout(bHide);
-            barcode.mouseout(bHide);
-        }
-    });
-</script>-->
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">About us</h3>
-    </div>
-    <div class="modal-body">
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img src="img/aliciading.jpg" width="150%" height="150px" alt="Alicia Ding">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">Alicia Ding</h4>
-                金融数学硕士, 毕业于罗特格斯大学<br>
-                主要负责比赛统筹实施方面的工作<br>
-                现从事Cash & FX的研究<br>
+                <h4>Tooltips in a modal</h4>
+                <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
 
+                <hr>
+
+                <h4>Overflowing text to show scroll behavior</h4>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+
+        </div>&lt;!&ndash; /.modal-content &ndash;&gt;
+    </div>&lt;!&ndash; /.modal-dialog &ndash;&gt;
+</div>&lt;!&ndash; /.modal &ndash;&gt;
+-->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Organizer</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/aliciading.jpg" width="150px" height="150px" alt="Alicia Ding">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Alicia Ding</h4>
+                        金融数学硕士, 毕业于罗特格斯大学<br>
+                        主要负责比赛统筹实施方面的工作<br>
+                        现从事Cash & FX的研究<br>
+
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/ianzhang.jpg" width="150px" height="150px" alt="Ian Zhang">
+                        </a></div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Ian Zhang</h4>
+                        工程硕士, 毕业于浙江大学<br>
+                        主要负责比赛打杂方面的工作<br>
+                        现从事Market Risk的研究<br>
+
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/heddagao.jpg" width="150px" height="150px" alt="Hedda Gao">
+                        </a></div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Hedda Gao</h4>
+                        工学硕士, 毕业于南开大学<br>
+                        主要负责比赛法务和账务方面的工作<br>
+                        现从事Market Risk的研究<br>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/cathygao.png" width="150px" height="150px" alt="Cathy Gao">
+                        </a></div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Cathy Gao</h4>
+                        工学硕士, 毕业于北京航空航天大学<br>
+                        主要负责比赛内联和公关方面的工作<br>
+                        现从事Clearing & Settlement的研究<br>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="img/timothyshi.jpg" width="150px" height="150px" alt="Timothy Shi">
+                        </a></div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Timothy Shi</h4>
+                        工学博士, 毕业于北京大学<br>
+                        主要负责比赛考核方面的工作<br>
+                        现从事Liquidity Risk的研究<br>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img src="img/ianzhang.jpg" width="150%" height="150px" alt="Ian Zhang">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">Ian Zhang</h4>
-                工程硕士, 毕业于浙江大学<br>
-                主要负责比赛打杂方面的工作<br>
-                现从事Market Risk的研究<br>
-
-            </div>
-        </div>
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img src="img/heddagao.jpg" width="150%" height="150px" alt="Hedda Gao">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">Hedda Gao</h4>
-                工学硕士, 毕业于南开大学<br>
-                主要负责比赛法务和账务方面的工作<br>
-                现从事Market Risk的研究<br>
-            </div>
-        </div>
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img src="img/cathygao.png" width="150%" height="150px" alt="Cathy Gao">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">Cathy Gao</h4>
-                工学硕士, 毕业于北京航空航天大学<br>
-                主要负责比赛内联和公关方面的工作<br>
-                现从事Clearing & Settlement的研究<br>
-            </div>
-        </div>
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img src="img/timothyshi.jpg" width="150%" height="150px" alt="Timothy Shi">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">Timothy Shi</h4>
-                工学博士, 毕业于北京大学<br>
-                主要负责比赛考核方面的工作<br>
-                现从事Liquidity Risk的研究<br>
-            </div>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
     </div>
 </div>
-
 </body>
 <script src="Scripts/js/jquery.min.js"></script>
 <script src="Scripts/js/bootstrap.min.js"></script>
+<script type="javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    })
+</script>
 </html>
 
   
