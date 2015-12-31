@@ -1,0 +1,62 @@
+
+  
+    <!DOCTYPE html>
+<!-- saved from url=(0040)http://aurorawong.sinaapp.com/sorry.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta content="always" name="referrer">
+<meta name="theme-color" content="#2932e1">
+<title>对不起</title>
+<style type="text/css">
+.mainDiv{
+		text-align:center;
+		margin-left:auto; 
+		margin-right:auto;
+}
+.eee	{
+		width:80px;height:60px;background:#eee;
+}
+.words		{
+		font-size: 80px;
+}
+</style>
+<script type="text/javascript">
+	var base=0;
+	function clickEvent(){
+		setInterval(function() {
+			showTime(3000); 
+		}, 100); 
+	}
+	function showTime(times) {
+		base = base + 1; 
+		if(base<=times){
+			var word = '第'+base+"遍:对不起,我爱你"
+			document.getElementById('main').innerHTML = word; 
+			console.log(word);			
+		} else {
+		}
+	}
+</script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<div class="mainDiv">
+	<div><button id="start" class="eee" onclick="javascript:clickEvent();">显示</button></div>
+	<div><span id="main" class="words"></span></div>
+</div>
+
+</body></html>
+  
