@@ -16,7 +16,7 @@
     <script type="text/javascript">
         <!--
         var g_Interval = 10;
-        var g_PersonCount = 10;//dinner places count
+        var g_PlaceCount = 14;//dinner places count
         var g_Timer;
         var running = false;
         function beginRndNum(trigger){
@@ -35,7 +35,7 @@
         }
 
         function updateRndNum(){
-            var num = Math.floor(Math.random()*g_PersonCount+1);
+            var num = Math.ceil(Math.random()*g_PlaceCount+1);
             $("#ResultNum").attr('src',"img/"+num+".png");
 /*            $('#ResultNum').html(num);*/
         }
