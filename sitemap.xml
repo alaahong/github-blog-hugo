@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.ianzhang.cn/scbcode/dinner/index.html</loc>
+    <lastmod>2016-01-11T15:02:49.338Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.ianzhang.cn/scbcode/dinner/js/jquery.min.js</loc>
+    <lastmod>2016-01-11T14:41:20.758Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ianzhang.cn/post/in-the-2015/</loc>
     <lastmod>2015-12-31T15:28:59.180Z</lastmod>
   </url>
