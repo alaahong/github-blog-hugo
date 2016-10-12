@@ -3,53 +3,6 @@
 
 
     
-  <url>
-    <loc>http://www.ianzhang.cn/post/Tianjin-Marathon-2016/</loc>
-    <lastmod>2016-05-22T08:34:39.553Z</lastmod>
-    <data>
-        <display>
-        <title>Tianjin Marathon 2016</title>
-        <pubTime>2016-05-22T07:23:26.000Z</pubTime>
-        
-        <tag>2016</tag>
-         
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://www.ianzhang.cn/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-  <url>
-    <loc>http://www.ianzhang.cn/post/in-the-2015/</loc>
-    <lastmod>2015-12-31T15:28:59.180Z</lastmod>
-    <data>
-        <display>
-        <title>in the 2015</title>
-        <pubTime>2015-12-31T06:23:40.000Z</pubTime>
-        
-        <tag>2015Y</tag>
-         
-        <tag>life</tag>
-         
-        <tag>summary</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="http://www.ianzhang.cn/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
     
@@ -58,51 +11,15 @@
     
     
     
-  <url>
-    <loc>http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2015-12-27T07:53:47.424Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo扩展记录</title>
-        <pubTime>2015-12-24T06:23:42.000Z</pubTime>
-        
-        <tag>extends</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>plugin</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.ianzhang.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.ianzhang.cn/post/The-2nd-Mini-Code-Marathon-Summary/</loc>
-    <lastmod>2015-12-27T06:53:34.406Z</lastmod>
-    <data>
-        <display>
-        <title>The 2nd Mini Code Marathon Summary</title>
-        <pubTime>2015-12-27T06:39:57.000Z</pubTime>
-        
-        <tag>codemarathon</tag>
-         
-        <tag>sc</tag>
-         
-         
-           
-             
-              <breadCrumb title="work" url="http://www.ianzhang.cn/categories/work/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -111,7 +28,7 @@
     
   <url>
     <loc>http://www.ianzhang.cn/post/welcome/</loc>
-    <lastmod>2015-12-24T09:20:21.811Z</lastmod>
+    <lastmod>2016-10-12T16:26:38.068Z</lastmod>
     <data>
         <display>
         <title>WELCOME</title>
@@ -133,5 +50,96 @@
     </url>
 
     
+  <url>
+    <loc>http://www.ianzhang.cn/post/in-the-2015/</loc>
+    <lastmod>2016-10-12T16:26:38.066Z</lastmod>
+    <data>
+        <display>
+        <title>in the 2015</title>
+        <pubTime>2015-12-31T06:23:40.000Z</pubTime>
+        
+        <tag>2015Y</tag>
+         
+        <tag>life</tag>
+         
+        <tag>summary</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://www.ianzhang.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ianzhang.cn/post/Tianjin-Marathon-2016/</loc>
+    <lastmod>2016-10-12T16:26:38.057Z</lastmod>
+    <data>
+        <display>
+        <title>Tianjin Marathon 2016</title>
+        <pubTime>2016-05-22T07:23:26.000Z</pubTime>
+        
+        <tag>2016</tag>
+         
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://www.ianzhang.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ianzhang.cn/post/The-2nd-Mini-Code-Marathon-Summary/</loc>
+    <lastmod>2016-10-12T16:26:38.055Z</lastmod>
+    <data>
+        <display>
+        <title>The 2nd Mini Code Marathon Summary</title>
+        <pubTime>2015-12-27T06:39:57.000Z</pubTime>
+        
+        <tag>codemarathon</tag>
+         
+        <tag>sc</tag>
+         
+         
+           
+             
+              <breadCrumb title="work" url="http://www.ianzhang.cn/categories/work/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ianzhang.cn/post/Hexo%E6%89%A9%E5%B1%95%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2016-10-12T16:26:38.040Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo扩展记录</title>
+        <pubTime>2015-12-24T06:23:42.000Z</pubTime>
+        
+        <tag>extends</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>plugin</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.ianzhang.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
 </urlset>
