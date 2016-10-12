@@ -132,7 +132,7 @@ function gameOver() {
         showGameScoreLayer()
     }, 1500);
     console.log(shareText(_gameScore));
-    var a = shareText(_gameScore).replace("<br/><br/>", "");
+    var a = shareText(_gameScore).replace("<br><br>", "");
     retSetWeixinShare({
         result: g.type,
         openid: g.openid,
@@ -150,60 +150,7 @@ function gameOver() {
 }
 function gameTime() {
     _gameTimeNum--;
-    if (_gameTimeNum <= 0) {
-        GameTimeLayer.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;时间到！";
-        gameOver();
-        GameLayerBG.className += " flash";
-        createjs.Sound.play("end")
-    } else {
-        GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum)
-    }
-}
-function creatTimeText(b) {
-    var a = (100000 + b + "").substr(-4, 4);
-    a = "&nbsp;&nbsp;" + a.substr(0, 2) + "'" + a.substr(2) + "''";
-    return a
-}
-var _ttreg = / t{1,2}(\d+)/, _clearttClsReg = / t{1,2}\d+| bad/;
-function refreshGameLayer(f, a, h) {
-    var d = Math.floor(Math.random() * 1000) % 4 + (a ? 0 : 4);
-    for (var c = 0; c < f.children.length; c++) {
-        var e = f.children[c], b = e.style;
-        b.left = (c % 4) * blockSize + "px";
-        b.bottom = Math.floor(c / 4) * blockSize + "px";
-        b.width = blockSize + "px";
-        b.height = blockSize + "px";
-        e.className = e.className.replace(_clearttClsReg, "");
-        if (d == c) {
-            _gameBBList.push({cell: d % 4, id: e.id});
-            e.className += " t" + (Math.floor(Math.random() * 1000) % 5 + 1);
-            e.notEmpty = true;
-            d = (Math.floor(c / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4
-        } else {
-            e.notEmpty = false
-        }
-    }
-    if (a) {
-        f.style.webkitTransitionDuration = "0ms";
-        f.style.display = "none";
-        f.y = -blockSize * (Math.floor(f.children.length / 4) + (h || 0)) * a;
-        setTimeout(function () {
-            f.style[transform] = "translate3D(0," + f.y + "px,0)";
-            setTimeout(function () {
-                f.style.display = "block"
-            }, 100)
-        }, 200)
-    } else {
-        f.y = 0;
-        f.style[transform] = "translate3D(0," + f.y + "px,0)"
-    }
-    f.style[transitionDuration] = "150ms"
-}
-function gameLayerMoveNextRow() {
-    for (var a = 0; a < GameLayer.length; a++) {
-        var b = GameLayer[a];
-        b.y += blockSize;
-        if (b.y > blockSize * (Math.floor(b.children.length / 4))) {
+    if (_gameTimeNum <= 0="" 4="" 5="" 0)="" {="" gametimelayer.innerhtml="&nbsp;&nbsp;&nbsp;&nbsp;时间到！" ;="" gameover();="" gamelayerbg.classname="" +=" flash" createjs.sound.play("end")="" }="" else="" function="" creattimetext(b)="" var="" a="(100000" b="" "").substr(-4,="" 4);="" a.substr(0,="" 2)="" "'"="" a.substr(2)="" "''";="" return="" _ttreg="/" t{1,2}(\d+)="" ,="" _clearttclsreg="/" t{1,2}\d+|="" bad="" refreshgamelayer(f,="" a,="" h)="" d="Math.floor(Math.random()" *="" 1000)="" %="" (a="" ?="" :="" for="" (var="" c="0;" <="" f.children.length;="" c++)="" e="f.children[c]," b.left="(c" 4)="" blocksize="" "px";="" b.bottom="Math.floor(c" b.width="blockSize" b.height="blockSize" e.classname="e.className.replace(_clearttClsReg," "");="" if="" (d="=" c)="" _gamebblist.push({cell:="" 4,="" id:="" e.id});="" (math.floor(math.random()="" 1);="" e.notempty="true;" 1)="" math.floor(math.random()="" (a)="" f.style.webkittransitionduration="0ms" f.style.display="none" f.y="-blockSize" (math.floor(f.children.length="" (h="" ||="" 0))="" a;="" settimeout(function="" ()="" f.style[transform]="translate3D(0," "px,0)";="" },="" 100)="" 200)="" "px,0)"="" f.style[transitionduration]="150ms" gamelayermovenextrow()="" gamelayer.length;="" a++)="" b.y="" (b.y=""> blockSize * (Math.floor(b.children.length / 4))) {
             refreshGameLayer(b, 1, -1)
         } else {
             b.style[transform] = "translate3D(0," + b.y + "px,0)"
@@ -240,17 +187,15 @@ function gameTapEvent(d) {
 }
 function createGameLayer() {
     var d = '<div id="GameLayerBG">';
-    for (var c = 1; c <= 2; c++) {
-        var e = "GameLayer" + c;
-        d += '<div id="' + e + '" class="GameLayer">';
+    for (var c = 1; c <= 2;="" c++)="" {="" var="" e="GameLayer" +="" c;="" d="" '"="" class="GameLayer">';
         for (var b = 0; b < 10; b++) {
             for (var a = 0; a < 4; a++) {
-                d += '<div id="' + e + "-" + (a + b * 4) + '" num="' + (a + b * 4) + '" class="block' + (a ? " bl" : "") + '"></div>'
+                d += '<div id="' + e + " -"="" +="" (a="" b="" *="" 4)="" '"="" num="' + (a + b * 4) + '" class="block' + (a ? " bl"="" :="" "")=""></div>'
             }
         }
-        d += "</div>"
+        d += "</=></div>"
     }
-    d += "</div>";
+    d += "</=></div>";
     d += '<div id="GameTimeLayer"></div>';
     return d
 }
@@ -289,19 +234,15 @@ function backBtn() {
 }
 var mebtnopenurl = "http://www.ianzhang.cn/";
 function shareText(a) {
-    if (a <= 49) {
-        return "一共摘了" + a + "只香菇！<br/><br/>第一翅为一个女孩屎这么香菇！"
+    if (a <= 49)="" {="" return="" "一共摘了"="" +="" a="" "只香菇！<br=""><br>第一翅为一个女孩屎这么香菇！"
     }
-    if (a <= 99) {
-        return "一共摘了" + a + "只香菇！<br/><br/>第一翅为一个女孩屎这么香菇！"
+    if (a <= 99)="" {="" return="" "一共摘了"="" +="" a="" "只香菇！<br=""><br>第一翅为一个女孩屎这么香菇！"
     }
-    if (a <= 149) {
-        return "一共摘了" + a + "只香菇！<br/><br/>第一翅为一个女孩屎这么香菇！"
+    if (a <= 149)="" {="" return="" "一共摘了"="" +="" a="" "只香菇！<br=""><br>第一翅为一个女孩屎这么香菇！"
     }
-    if (a <= 199) {
-        return "太牛了！一夜" + a + "只香菇！<br/><br/>第一翅为一个女孩屎这么香菇！"
+    if (a <= 199)="" {="" return="" "太牛了！一夜"="" +="" a="" "只香菇！<br=""><br>第一翅为一个女孩屎这么香菇！"
     }
-    return "一共摘了" + a + "只香菇！<br/><br/>第一翅为一个女孩屎这么香菇！"
+    return "一共摘了" + a + "只香菇！<br><br>第一翅为一个女孩屎这么香菇！"
 }
 function toStr(a) {
     if (typeof a == "object") {
@@ -346,4 +287,4 @@ $(".weui-check__label").click(function () {
 $("#showTooltips").click(function () {
     $("#toushu").hide();
     $("#container").hide()
-});
+});</=></=></=></=>
