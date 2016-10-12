@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.ianzhang.cn/post/lanshouxianggu/</loc>
+    <lastmod>2016-10-12T18:53:41.375Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ianzhang.cn/xianggu/index.html</loc>
     <lastmod>2016-10-12T18:50:52.907Z</lastmod>
   </url>
@@ -39,11 +44,6 @@
   <url>
     <loc>http://www.ianzhang.cn/xianggu/xianggu_files/body.js</loc>
     <lastmod>2016-10-12T18:14:10.476Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.ianzhang.cn/post/lanshouxianggu/</loc>
-    <lastmod>2016-10-12T18:14:10.467Z</lastmod>
   </url>
   
   <url>
