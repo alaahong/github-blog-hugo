@@ -21,9 +21,6 @@
 <body onload="init()">
 <div id="GameScoreLayer" class="BBOX SHADE bgc1 GameScoreLayer" style="display:none;">
     <div style="padding:0 5%;">
-        <div id="GameScoreLayer-text"></div>
-        <br><!--<div id="GameScoreLayer-score"style="margin-bottom:1em;">香菇</div>-->
-        <!--<div id="GameScoreLayer-bast">最佳</div>--><br>
         <div id="GameScoreLayer-btn" class="BOX">
             <div class="btn BOX-S" onclick="replayBtn()">重来</div>
             &nbsp;
@@ -33,6 +30,10 @@
         <div id="GameScoreLayer-share" class="BOX">
             <div id="mebtn" class="btn BOX-S" onclick="window.open(mebtnopenurl)">蓝瘦香菇怎么办？</div>
         </div>
+        <div id="GameScoreLayer-text"></div>
+        <br><!--<div id="GameScoreLayer-score"style="margin-bottom:1em;">香菇</div>-->
+        <!--<div id="GameScoreLayer-bast">最佳</div>--><br>
+
         <div id="toushu">投诉</div>
     </div>
 </div>
@@ -63,11 +64,11 @@
     <div class="FILL BOX-M" style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:5;">
         <div style="margin:0 8% 0 9%;">
             <div style="font-size:2.6em; color:#FEF002;">你能摘到多少只香菇？</div>
-            <br>
-            <div style="font-size:2.2em; color:#fff; line-height:1.5em;">从最下面的蓝瘦开始，<br>20秒内看你能摘到多少个</div>
-            <br><br>
             <div id="ready-btn" class="btn loading"
                  style="display:inline-block; margin:0 auto; width:8em; height:1.7em; line-height:1.7em; font-size:2.2em; color:#fff;"></div>
+            <div style="font-size:2.2em; color:#fff; line-height:1.5em;">从最下面的蓝瘦开始，<br>20秒内看你能摘到多少个</div>
+            <br><br>
+
         </div>
     </div>
 </div>
