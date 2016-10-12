@@ -26,6 +26,7 @@ if (isDesktop) {
 var body, blockSize, GameLayer = [], GameLayerBG, touchArea = [], GameTimeLayer;
 var transform, transitionDuration;
 function init(a) {
+    document.title='你能搞到多少香菇？';
     showWelcomeLayer();
     body = document.getElementById("gameBody") || document.body;
     body.style.height = window.innerHeight + "px";
@@ -133,6 +134,7 @@ function gameOver() {
     }, 1500);
     console.log(shareText(_gameScore));
     var a = shareText(_gameScore).replace("<br/><br/>", "");
+    document.title='不服来测！摘了'+_gameScore+'只香菇';
     retSetWeixinShare({
         result: g.type,
         openid: g.openid,
