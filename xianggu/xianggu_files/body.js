@@ -338,12 +338,23 @@ function share() {
     //    this.style.display = "none"
     //}
     wx.onMenuShareAppMessage({
-        title: '不服来测！摘了'+_gameScore+'只香菇', // 分享标题
+        title: '不服来测！一共摘了'+_gameScore+'只香菇', // 分享标题
         desc: '一共摘了'+_gameScore+'只香菇', // 分享描述
-        link: '', // 分享链接
-        imgUrl: './xianggu_files/b.jpg', // 分享图标
+        link: 'http://www.ianzhang.cn/xianggu/', // 分享链接
+        imgUrl: 'http://www.ianzhang.cn/xianggu/xianggu_files/b.jpg', // 分享图标
         type: '', // 分享类型,music、video或link，不填默认为link
         dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function () {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    wx.onMenuShareTimeline({
+        title: '不服来测！一共摘了'+_gameScore+'只香菇', // 分享标题
+        link: 'http://www.ianzhang.cn/xianggu/', // 分享链接
+        imgUrl: 'http://www.ianzhang.cn/xianggu/xianggu_files/b.jpg', // 分享图标
         success: function () {
             // 用户确认分享后执行的回调函数
         },
