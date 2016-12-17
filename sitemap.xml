@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.ianzhang.cn/aurora/index.html</loc>
+    <lastmod>2016-12-17T16:19:45.454Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.ianzhang.cn/xianggu/xianggu_files/body.js</loc>
     <lastmod>2016-10-12T19:38:16.329Z</lastmod>
   </url>
@@ -149,6 +154,26 @@
   <url>
     <loc>http://www.ianzhang.cn/404.html</loc>
     <lastmod>2016-10-12T16:26:38.024Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.ianzhang.cn/aurora/resource/functions_dev.js</loc>
+    <lastmod>2013-11-13T13:05:30.483Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.ianzhang.cn/aurora/resource/garden_dev.js</loc>
+    <lastmod>2013-11-13T13:05:30.478Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.ianzhang.cn/aurora/resource/jquery.js</loc>
+    <lastmod>2013-11-13T13:05:30.450Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.ianzhang.cn/aurora/resource/default.css</loc>
+    <lastmod>2013-11-13T13:05:30.440Z</lastmod>
   </url>
   
 </urlset>
