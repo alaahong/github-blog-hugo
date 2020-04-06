@@ -1,38 +1,64 @@
-baseURL = "http://ianzhang.cn/"
+baseURL = "//www.ianzhang.cn/"
 languageCode = "en-us"
-title = "手中执剑,方能保护所爱之人"
+title = "Ian Zhang"
 theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
-paginate = 20
+defaultContentLanguage = "zh-cn"
+paginate = 10
 canonifyurls = true
-publishDir = "docs"
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+#disqusShortname = "yourdiscussshortname"
+[permalinks]
+  posts = "/:year/:month/:day/:title"
 
-disqusShortname = "yourdiscussshortname"
-
+[markup]
+  [markup.highlight]
+            codeFences = true
+            guessSyntax = true
+            hl_Lines = ""
+            lineNoStart = 1
+            lineNos = false
+            lineNumbersInTable = true
+            noClasses = true
+            style = "monokai"
+            tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
 [params]
     author = "Ian zhang"
-    info = "Hello World"
+    info = "Ian is an experienced Development Lead in the banking industry. \r\nSkilled in Java, Automation, Big Data, Full Stack, Troubleshooting and Requirements Analysis. \nStrong engineering professional with a Master of Software Engineering focused in Financial Information Technology from Zhejiang University. "
     description = "Ian's personal website"
     keywords = "blog,developer"
-    avatarurl = "/images/avatar.jiff"
-
+    avatarurl = "/images/avatar.jpg"
+    hasCJKLanguage = true
+    uglyURLs = true
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
-
-    footercontent = "Welcome to my world"
+    syntaxHighlighter = "highlight.js"
+    footercontent = "手中执剑,方能保护所爱之人"
 
     hidecredits = false
     hidecopyright = false
 
     rtl = false
 
-    math = true
-    custom_css = ["css/custom.css"]
+    math = false
+#    custom_css = ["css/custom.css"]
+
+[params.utteranc]
+    enable = true
+    repo = "alaahong/hugoblogcomments"    # 存储评论的Repo，格式为 owner/repo
+    issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
+    theme = "github-light" # 样式主题，有github-light和github-dark两种
+    label = "BlogComments"  # Github Issue的标签,要先在repo里面建立这个标签
 
 # Social links
 [[params.social]]

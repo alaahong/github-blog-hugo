@@ -1,14 +1,14 @@
 ---
 title: "New Blog With Hugo"
 date: 2020-04-06T14:54:53+08:00
-draft: true
+draft: false
 ---
+
 
 最近翻译[Selenium官方文档](https://www.selenium.dev/documentation/)的缘故，接触了[Hugo](https://gohugo.io/)，原本的博客有些年久失修，决定用Hugo重新做一版.
 
 
-
-安装Hugo
+# 安装Hugo
 
 此段详见[官网教程](https://gohugo.io/getting-started/installing/)，Windows上建议通过[Chocolatey](https://chocolatey.org/)安装
 
@@ -46,11 +46,13 @@ matches Hugo Layouts Lookup Rules for this combination.
 
 
 
+# 制作站点
+
 在Github上创建存放源码的repo
 
-![](\img\2020-04-06 15_04_34-Window.png)
+![image](/images/2020-04-06_15_04_34-Window.png)
 
-![](\img\2020-04-06 15_07_07-Window.png)
+![image](/images/2020-04-06_15_07_07-Window.png)
 
 
 
@@ -103,4 +105,66 @@ Total in 119 ms
 hugo server
 ```
 
-<img src="D:\data\blog\alaahong.github.io\alaahong.github.io\static\images\2020-04-06 15_32_50-手中执剑,方能保护所爱之人.png" style="zoom:75%;" />
+![image](/images/2020-04-06_16_37_18-手中执剑,方能保护所爱之人.png)
+
+
+
+# 增加评论
+
+[官方推荐](https://gohugo.io/content-management/comments/)的是Disqus，这里采用的是[utteranc](https://utteranc.es/)
+
+首先建立一个评论专用的repo
+
+![image](/images/2020-04-06_21_10_54-Window.png)
+
+新建评论标签
+
+![image](/images/2020-04-06_21_12_20-Window.png)
+
+添加配置
+
+```
+[params.utteranc]
+    enable = true
+    repo = "alaahong/hugoblogcomments"    # 存储评论的Repo，格式为 owner/repo
+    issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
+    theme = "github-light" # 样式主题，有github-light和github-dark两种
+    label = "BlogComments"  # Github Issue的标签,要先在repo里面建立这个标签
+```
+
+效果如下
+
+![image](/images/2020-04-06_21_13_43-Window.png)
+
+# TOC目录
+
+官方有实现[TOC](https://gohugo.io/content-management/toc/)，但是网上资料比较旧，涉及这个的不太多。将以下内容添加到single.html里合适的位置即可
+
+```
+    <aside>
+        {{ .TableOfContents }}
+    </aside>
+```
+
+[这里](https://gohugo.io/getting-started/configuration-markup/#table-of-contents)有对应的配置项
+
+# 编译部署
+
+推荐将github的静态页资源作为子模块
+
+```shell
+git submodule add -b master https://github.com/alaahong/alaahong.github.io.git public
+```
+
+官网给了linux环境下的[一键部署](https://gohugo.io/hosting-and-deployment/hosting-on-github/)，仿照着这里提供一个windows下的脚本
+
+```powershell
+hugo
+cd public
+git add --all
+git commit -m "Publishing to github"
+git push
+cd ..
+```
+
+保存以上内容到deploy.cmd，每次修改后执行此脚本，会自动将public下的全部新增未忽略文件推送到github.

@@ -210,3 +210,4 @@ DerivedData/
 !.vscode/extensions.json
 *.code-workspace
 
+/.idea/
